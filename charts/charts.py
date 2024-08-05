@@ -9,4 +9,3 @@ def generar_grafica_pie():
     pylot.savefig('pie.png')
     pylot.close()
     print("Funcion generar_grafica_pie() ejecutada correctamente")
-    

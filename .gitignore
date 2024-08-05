@@ -1,1 +1,3 @@
-*.pngs
+*.png
+**/__pycache__/
+*.pyc
