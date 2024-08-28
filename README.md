@@ -40,7 +40,9 @@ Bloque 2: PIP y Entornos Virtuales
             charts/charts.py
 
     V8: https://platzi.com/home/clases/4261-python-pip/55128-graficas-en-python-con-pip/
-    
-
-
-    
+        Vamos a utilizar el proyecto CSV para generar graficas, parece que fue usado en
+        el curso de comprehension, pero, se añade tambien la referencia de este lado, se
+        usara de forma independendiente en este proyecto.
+        
+        Estos nuevos archivos se estan añadiendo en los directorios app_csv para referencia
+        de uso.
