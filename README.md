@@ -44,5 +44,15 @@ Bloque 2: PIP y Entornos Virtuales
         el curso de comprehension, pero, se añade tambien la referencia de este lado, se
         usara de forma independendiente en este proyecto.
         
-        Estos nuevos archivos se estan añadiendo en los directorios app_csv para referencia
+        Estos nuevos archivos se estan añadiendo en los directorios /app para referencia
         de uso.
+
+    V9: https://platzi.com/home/clases/4261-python-pip/55129-que-es-un-ambiente-virtual/
+        Python esta instalado en el entorno general de la compu, junto con todas sus dependencias
+        de forma que si se instalan proyectos varios en la maquina, todo esta disponible
+        para todos, lo cual puede ser problematico a nivel microservicios.
+
+        Supongo en este punto sera de revisar empaquetamientos de dependencias, el equivalente
+        a gradle/maven en java.
+
+        

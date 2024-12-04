@@ -22,7 +22,7 @@ def run():
     country = results[0]
     print(country)
     labels, values = utils.get_population(country)
-    charts.generate_bar_chart(labels, values)
+    charts.generate_bar_chart(country['Country'], labels, values)
 
 if __name__ == '__main__':
   run()
