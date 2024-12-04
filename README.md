@@ -55,4 +55,6 @@ Bloque 2: PIP y Entornos Virtuales
         Supongo en este punto sera de revisar empaquetamientos de dependencias, el equivalente
         a gradle/maven en java.
 
-        
+        De aca la importancia de mantener empaquetados diferentes de cada proyecto con sus
+        respectivas dependencias, de esta forma manejaremos los ambientes virtuales por cada uno 
+        de los proyectos
