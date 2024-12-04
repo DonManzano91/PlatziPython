@@ -58,3 +58,25 @@ Bloque 2: PIP y Entornos Virtuales
         De aca la importancia de mantener empaquetados diferentes de cada proyecto con sus
         respectivas dependencias, de esta forma manejaremos los ambientes virtuales por cada uno 
         de los proyectos
+
+    V10: 
+        Comandos ejecutados:
+        $which python3 -> Nos dice donde esta alojado el ejecutor que usara el entorno virtual que usaremos.
+
+        $which pip3 -> Lo mismo pero para el gestor de dependencias.
+
+        $sudo apt install -y python3-venv -> Instalación del manejador de entornos virtuales, con este podremos
+                                             crearlos y (supongo) configurarlos. Este comando es usado por 
+                                             sistemas basados en debian, en mac no hace falta instalar este 
+                                             gestor, ya que viene en la instalacion por default de homebrew
+
+        $ python3 -m venv nombreDelAmbiente -> crea el directorio de ambiente virtual dentro del cual existiran
+                                               los comandos para activar y desactivar el entorno acorde sea 
+                                               necesario 
+
+        $source nombreDelAmbiente/bin/activate -> Activa el entorno virtual de modo que toda instalacion o gestion de dependencia
+                                    se hara dentro de ese entorno, este se ejecuta dentro de la carpeta, que sera
+                                    destinada a ser un entorno (o en este caso, dentro de cada proyecto).
+
+        $deactivate -> Nos saca del entorno virtual que antes ya habriamos accedido, de nuevo este se ejecuta cuando
+                       estemos dentro del proyecto particular que hayamos usado.
