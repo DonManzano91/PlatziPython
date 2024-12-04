@@ -74,9 +74,35 @@ Bloque 2: PIP y Entornos Virtuales
                                                los comandos para activar y desactivar el entorno acorde sea 
                                                necesario 
 
-        $source nombreDelAmbiente/bin/activate -> Activa el entorno virtual de modo que toda instalacion o gestion de dependencia
-                                    se hara dentro de ese entorno, este se ejecuta dentro de la carpeta, que sera
-                                    destinada a ser un entorno (o en este caso, dentro de cada proyecto).
+        $source nombreDelAmbiente/bin/activate -> Activa el entorno virtual de modo que toda instalacion o gestion 
+                                    de dependencia se hara dentro de ese entorno, este se ejecuta dentro de la 
+                                    carpeta, que sera destinada a ser un entorno (o en este caso, dentro de cada 
+                                    proyecto).
 
         $deactivate -> Nos saca del entorno virtual que antes ya habriamos accedido, de nuevo este se ejecuta cuando
                        estemos dentro del proyecto particular que hayamos usado.
+
+    V11:
+        Igual que con java y sus archivos para maven o gradle, en python se usa un archivo llamado requirements.txt
+        como gestor de dependencias.
+
+        Se proporcionan la documentacion necesaria para poder ejecutar el proyecto cuando uno es nuevo en dicho
+        proyecto.
+
+        Para llenar el requirements.txt se usa el siguiente comando con base en las dependencias alguna vez generadas
+        para poder usar el proyecto:
+
+        $ pip3 freeze > requirements.txt
+
+Bloque 3: Practicas
+
+Aca empieza un segmento bien bonito he interesante para hacer o entender como fucionan ciertos marcos de trabajo con 
+python.
+    V12:
+        En este caso se utilizara la libreria request para mandar un request a una API y manejar su respuesta dentro 
+        de un nuevo proyecto.
+        Libreria: https://requests.readthedocs.io/en/latest/
+        APi Fake: https://fakeapi.platzi.com
+
+        se ejecutan las instrucciones de V10 para crear el ambiente virtual de este nuevo proyecto.
+        Directorio con archivos propios creados para esta clase estan en /web-server
