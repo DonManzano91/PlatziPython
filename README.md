@@ -106,3 +106,29 @@ python.
 
         se ejecutan las instrucciones de V10 para crear el ambiente virtual de este nuevo proyecto.
         Directorio con archivos propios creados para esta clase estan en /web-server
+
+    V13:
+        En el subproyecto app, hay que instalar pandas en su respectivo entorno virtual
+        $pip3 install pandas
+
+        y pasar un nuevo requirements con la nueva dependencias:
+        $pip3 freeze > requirements.txt
+
+        Se añade una nueva modificacion usando pandas, el cambio es en el archivo app/main.py, tambien tuvieron que
+        copiarse algunas lineas adicionales de la implementacion vieja para no tronar el runtime del programa.
+
+    V14:
+        Es un ejemplo de como crear un servidor web con python, utilizando uvicorn como server
+        y fastapi como manejador* del servicio.
+
+        Se instala uvicorn y fastApi con pip3
+
+        Se hacen las modificaciones en /main.py para definir los servicios get que van a configurarse en la app,
+        asi mismo cuidar como se hace el import de fastAPI, ya que debe tener una sintaxis especial
+
+        Se ejecuta el servicio con los siguientes comandos:
+
+        $uvicorn nombreArchivoServicios:nombreAppEnDichoArchivo --reload (sintaxis, la siguiente linea es el cmd usado)
+        $uvicorn main:app --reload
+
+
