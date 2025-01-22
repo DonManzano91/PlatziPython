@@ -131,4 +131,21 @@ python.
         $uvicorn nombreArchivoServicios:nombreAppEnDichoArchivo --reload (sintaxis, la siguiente linea es el cmd usado)
         $uvicorn main:app --reload
 
+Bloque 4: Python & Docker 
+    V15 & V16:
+        Pequeña explicacion tanto de que es docker, como funciona en su implementacion mas generica y tambien el detalle 
+        de como haer la instalacion de dicho elemento de arquitectura.
+    V17:
+        Como añadir los archivos de configruacion para hacer posible la dockerizacion del proyecto, en este caso 
+        se añaden el dockerFile, y el docker-compse, para poder ejecutar todo esto en local es necesario tambien
+        tener ya instalado docker desktop.
+        Ya creados los archivos se ejecutan los siguientes comandos para poder hacer uso de la app de forma dockerizada
+        y en si para entrar al contenedor, ya dentro del contenedor se pueden ejecutar las cosas tal cual se hacian
+        en nuestro entorno local.
+
+        Comandos:
+        $ docker compose build -> construye la imagen y el "entorno" que usara la app dockerizada.
+        $ docker compose up -> levanta la app ya directamente con todos los recursos que requiere.
+        $ docker compose ps -> verificar que anda pasando con los contenedores en general
+        $ exit
 
