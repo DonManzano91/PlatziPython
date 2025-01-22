@@ -148,4 +148,20 @@ Bloque 4: Python & Docker
         $ docker compose up -> levanta la app ya directamente con todos los recursos que requiere.
         $ docker compose ps -> verificar que anda pasando con los contenedores en general
         $ exit
-
+    Teoria done, practica pendiente
+    V18:
+        Pequeño ajuste adicional en el cual se modifica el docker-compose.yaml para que tome los cambios en el
+        contenedor de forma casi sincrona a las modificaciones de codigo, esto solo hecho y comprobado de forma
+        local. De esta forma se evita hacer el build a cada rato
+    V19:
+        Cambio en el proyecto WebServer, de forma que se añade una linea adicional CMD dentro del Dockerfile para
+        que no ejecue un bash, sino que deje prendido el servidor web uvicorn.
+        A groso modo, la dockerizacion del proyecto se ejecuta de esta forma:
+            1. Tener un proyecto listo para dockerizar, esto implica que de forma local(al menos) se pueda correr
+                aplicacion de forma funcional.
+            2. Crear los archivos Dockerfile y docker-compose para detallar como se construira la imagen del
+                proyecto y el como configurar el deploy de dicha imagen, respectivamente.
+            3. Ejecutar los comandos:
+                $docker compose build
+                $docker compose up
+                Teniendo asi la mas basica de las dockerizaciones en el proyecto.
